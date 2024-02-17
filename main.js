@@ -7,10 +7,10 @@ export const getDotCombinations = (characters) => {
     let index = i;
 
     for (let j = 0; j < charactersLength; j++) {
-      console.log('combination', combination);
       if (index % 2 === 1) {
         combination[j] += '.';
       }
+      
       index = Math.floor(index / 2);
     }
 
